@@ -64,6 +64,10 @@ export default {
     }
   },
 
+  router: {
+    base: '/github_pages/'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
