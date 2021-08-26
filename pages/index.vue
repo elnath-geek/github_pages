@@ -1,11 +1,29 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
+    <v-col cols="12">
       <v-card class="logo py-4 d-flex justify-center">
         <NuxtLogo />
         <VuetifyLogo />
       </v-card>
-      test
+      <v-card>
+        {{error_msg}}
+      </v-card>
     </v-col>
   </v-row>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  data () {
+    return {
+      error_msg: ""
+    }
+  },
+
+  computed: {
+
+  }
+})
+</script>
